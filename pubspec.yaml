@@ -1,0 +1,41 @@
+name: my_first_flutter
+description: A new Flutter project.
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.0.1 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_svg: ^2.0.16
+  footer: ^0.0.4 
+  get: ^4.6.6
+  cupertino_icons: ^1.0.8
+  provider: ^6.1.2
+  webview_flutter: ^4.10.0
+  google_fonts: ^6.2.1
+  smooth_page_indicator: ^1.2.0+3
+  flick_video_player: ^0.9.0
+  video_player: ^2.2.15
+  flutter_carousel_media_slider: ^0.0.2
+  font_awesome_flutter: ^10.8.0
+  hive_ce: 2.5.0+2
+  hive_ce_flutter: 2.0.0
+  flutter_form_builder: ^9.5.0
+  form_builder_validators: ^11.0.0
+  carousel_slider: ^5.0.0
+  chewie: ^1.10.0
+  intl: 0.19.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - lib/assets/

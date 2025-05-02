@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../.."
+		},
+		{
+			"path": "../../../../../Uyenle"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Uyenle"
+	}
+}
