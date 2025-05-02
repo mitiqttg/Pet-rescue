@@ -78,10 +78,10 @@ class _RehomeState extends State<RehomePage> {
             children: [
               PetCard(
                 petId: 1,
-                petName: 'Sparky',
+                petName: 'Mr whisker',
                 images: ['lib/assets/cat0.png'],
                 shortDes: 'Loyal and friendly',
-                specie: 'Toyger',
+                specie: 'Cat',
                 longDes: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever ince the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five enturies, but also the leap into electronic typesetting",
                 favorites: 'tell you so much',
               ),

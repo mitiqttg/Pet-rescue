@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
-import 'dart:math'; // Import for min function
-
+import 'dart:math';
 import '../pages/adoptform.dart' as adopt;
-import '../widgets/imageCarousel.dart'; // Assuming ManuallyControlledSlider is here
+import '../widgets/imageCarousel.dart';
 
 class Breakpoints {
   static const sm = 640;
@@ -21,7 +20,6 @@ class PetCard extends StatefulWidget {
   final String shortDes;
   final String specie;
   final String longDes;
-  // --- Videos is now nullable and not required ---
   final List<String>? videos;
   final int petId;
 
@@ -49,7 +47,7 @@ class _PetCard extends State<PetCard> {
   List<Widget> _buildInfoSlides(double cardWidth, bool isExpanded) {
     final textColor = Theme.of(context).colorScheme.tertiary;
     final String fullText = isExpanded
-        ? 'Breed: ${widget.specie}\n Description: ${widget.longDes}'
+        ? 'Breed: ${widget.specie}\nDescription: ${widget.longDes}'
         : 'Breed: ${widget.specie}\n${widget.shortDes}';
 
     return [
@@ -118,7 +116,6 @@ class _PetCard extends State<PetCard> {
                 width: double.infinity,
                 child: ManuallyControlledSlider(
                   imgList: widget.images,
-                  // --- Safely access optional videos (Kept from previous fix) ---
                   videoUrl: widget.videos?.firstOrNull,
                   selected: selected,
                 ),

@@ -22,13 +22,11 @@ class VideoPlayerAppState extends State<VideoPlayerApp> {
   void initState() {
     super.initState();
 
-    // Create a VideoPlayerController for the video you want to play.
+    // VideoPlayerController.
     _controller = VideoPlayerController.networkUrl(Uri.parse(widget.linkVideo));
 
-    // Initialize the VideoPlayerController.
     _controller!.initialize();
 
-    // Play the video.
     _controller!.play();
   }
 
@@ -44,7 +42,6 @@ class VideoPlayerAppState extends State<VideoPlayerApp> {
   void dispose() {
     super.dispose();
 
-    // Dispose of the VideoPlayerController.
     _controller!.dispose();
   }
 }
